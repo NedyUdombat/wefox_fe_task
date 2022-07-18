@@ -34,7 +34,6 @@ const ItemCard = (props: ItemCardProps) => {
             minWidth: '248px',
             maxHeight: '168px',
             maxWidth: '248px',
-            background: 'green',
             overflow: 'hidden',
           }}
         >

@@ -15,12 +15,19 @@ const Index = (): JSX.Element => {
   return (
     <section className="bg-warning">
       <Topbar />
-      <div className="py-2 d-flex px-3">
-        <Button variant="primary" className="ml-auto" onClick={handleShow}>
-          Add New City
-        </Button>
+      <div
+        className="mx-auto"
+        style={{
+          maxWidth: '1400px',
+        }}
+      >
+        <div className="py-2 d-flex px-5">
+          <Button variant="primary" className="ml-auto" onClick={handleShow}>
+            Add New City
+          </Button>
+        </div>
+        <ItemList />
       </div>
-      <ItemList />
       <Modal show={show} onHide={handleClose}>
         <Modal.Header>
           <Modal.Title>Add New City </Modal.Title>
