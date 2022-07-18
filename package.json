@@ -7,7 +7,8 @@
     "start": "node server.js",
     "dev": "webpack-dev-server --mode development --open --hot",
     "format": "prettier --write '**/*.{tsx,ts,js,jsx}'",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --mode production"
   },
   "lint-staged": {
     "*.ts": [
